@@ -59,7 +59,7 @@ const ToursSection = () => {
       <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 mx-auto">
         <div className="text-center mb-16 md:mb-24 tours-header-reveal">
           <p className="font-display italic text-primary text-xl md:text-2xl mb-4">Our Tour List</p>
-          <h2 className="font-display text-4xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[1.05]">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
             Most Popular Tours
           </h2>
           <p className="max-w-3xl mx-auto font-body text-muted-foreground text-lg md:text-xl leading-relaxed">
@@ -67,7 +67,7 @@ const ToursSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 tours-grid-reveal">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 tours-grid-reveal">
           {tours.map((tour) => (
             <div
               key={tour.name}

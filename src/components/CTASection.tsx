@@ -32,7 +32,7 @@ const CTASection = () => {
       />
       <div className="absolute inset-0 bg-black/65" />
       <div className="relative z-10 text-center px-6 md:px-12 w-full max-w-[1440px] mx-auto cta-content">
-        <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8 leading-tight">
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
           Ready To Travel With Us?
         </h2>
         <p className="font-body text-lg md:text-2xl lg:text-3xl text-white/90 mb-10 md:mb-12 max-w-4xl mx-auto italic leading-relaxed font-light">

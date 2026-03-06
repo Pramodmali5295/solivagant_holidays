@@ -69,7 +69,7 @@ const DestinationsSection = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           <div className="dest-title-item">
             <p className="font-display italic text-primary text-xl mb-4">Our Destinations</p>
-            <h2 className="font-display text-4xl md:text-7xl font-bold text-foreground leading-tight">
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
               Go To Exotic Places
             </h2>
           </div>
