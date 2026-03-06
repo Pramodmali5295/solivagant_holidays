@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-16 pt-8 flex justify-center items-center">
           <p className="font-body text-sm md:text-base text-white text-center tracking-wide">
-            © 2024 Solivagant Holidays. All rights reserved.
+            © 2026 Solivagant Holidays. All rights reserved.
           </p>
         </div>
       </div>
