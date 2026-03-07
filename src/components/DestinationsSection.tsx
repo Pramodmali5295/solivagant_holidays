@@ -10,6 +10,10 @@ import thailand from "@/assets/thailand.jpg";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const destinations = [
+  { name: "Rajasthan", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" },
+  { name: "Kerala", image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" },
+  { name: "Uttarakhand", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
+  { name: "Himachal", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
   { name: "Vietnam", image: vietnam },
   { name: "Dubai", image: dubai },
   { name: "Turkey", image: turkey },
@@ -17,7 +21,6 @@ const destinations = [
   { name: "Bali", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" },
   { name: "Maldives", image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" },
   { name: "Switzerland", image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" },
-  { name: "Iceland", image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=800&q=80" },
 ];
 
 const DestinationsSection = () => {
@@ -70,7 +73,7 @@ const DestinationsSection = () => {
           <div className="dest-title-item">
             <p className="font-display italic text-primary text-xl mb-4">Our Destinations</p>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
-              Go To Exotic Places
+              GO TO Exotic places
             </h2>
           </div>
           <p className="dest-title-item max-w-2xl font-body text-muted-foreground text-lg md:text-xl leading-relaxed">

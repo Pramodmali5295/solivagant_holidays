@@ -35,8 +35,8 @@ const HeroSection = () => {
         <p className="hero-text-item font-display italic text-xl md:text-3xl text-primary-foreground/90 mb-6 uppercase tracking-widest">
           Visit The Beautiful Landscape!
         </p>
-        <h1 className="hero-text-item font-display text-4xl md:text-6xl font-bold text-primary-foreground leading-[1.1] mb-8 drop-shadow-2xl">
-          Explore World <br className="hidden sm:block" />In Luxury & Comfort
+        <h1 className="hero-text-item font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.1] mb-10 drop-shadow-2xl px-2">
+          Explore the world <br className="hidden sm:block" />In Comfort
         </h1>
         <p className="hero-text-item max-w-2xl mx-auto font-body text-base md:text-lg text-primary-foreground/90 mb-10 leading-relaxed">
           Embark on extraordinary journeys with Solivagant Holidays. From the peaks of Switzerland to the beaches of Bali, we craft experiences that linger in your heart forever.

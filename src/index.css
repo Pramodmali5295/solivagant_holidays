@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 15%;
 
-    --primary: 16 85% 58%;
+    --primary: 200 100% 45%; /* Logo Blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 30% 96%;
-    --secondary-foreground: 220 20% 15%;
+    --secondary: 16 85% 58%; /* Logo Orange/Coral */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 220 10% 46%;
 
-    --accent: 174 60% 40%;
+    --accent: 142 71% 45%; /* Logo Green */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,16 +32,16 @@
 
     --border: 220 14% 90%;
     --input: 220 14% 90%;
-    --ring: 16 85% 58%;
+    --ring: 200 100% 45%;
 
     --radius: 0.75rem;
 
-    --hero-overlay: linear-gradient(135deg, hsla(220, 30%, 10%, 0.65), hsla(16, 60%, 20%, 0.45));
-    --section-warm: 30 40% 97%;
+    --hero-overlay: linear-gradient(135deg, hsla(200, 100%, 10%, 0.75), hsla(16, 60%, 20%, 0.45));
+    --section-warm: 200 30% 98%;
     --coral: 16 85% 58%;
     --coral-dark: 16 75% 48%;
-    --teal: 174 60% 40%;
-    --teal-light: 174 50% 92%;
+    --teal: 142 71% 45%;
+    --teal-light: 142 50% 95%;
     --gold: 40 90% 55%;
 
     --font-display: 'Playfair Display', serif;

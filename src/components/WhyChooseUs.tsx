@@ -7,12 +7,12 @@ import { Award, Map, MousePointerClick, Shuffle, BadgeIndianRupee, Headphones } 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const features = [
-  { icon: Award, title: "Experts Planning" },
+  { icon: Award, title: "Experts planning" },
   { icon: Map, title: "Wide Choices of Tours" },
-  { icon: MousePointerClick, title: "Easy Booking Process" },
-  { icon: Shuffle, title: "Great Flexibility" },
+  { icon: MousePointerClick, title: "Easy booking process" },
+  { icon: Shuffle, title: "Great Flexibilty" },
   { icon: BadgeIndianRupee, title: "Best Prices" },
-  { icon: Headphones, title: "On Tour Support" },
+  { icon: Headphones, title: "On tour support" },
 ];
 
 const WhyChooseUs = () => {
@@ -75,51 +75,58 @@ const WhyChooseUs = () => {
             
             {/* Experience Badge */}
             <div className="absolute -bottom-3 -right-2 md:-right-4 md:-bottom-4 bg-primary text-primary-foreground p-4 md:p-6 rounded-xl md:rounded-2xl shadow-lg z-20 border-[3px] md:border-[6px] border-white min-w-[100px] md:min-w-[150px]">
-              <p className="font-display text-2xl md:text-4xl font-bold leading-none mb-1">15+</p>
+              <p className="font-display text-2xl md:text-4xl font-bold leading-none mb-1">20+</p>
               <p className="font-body text-[7px] md:text-xs font-bold uppercase tracking-widest opacity-90">Years Experience</p>
             </div>
           </div>
 
           {/* Content Side */}
-          <div className="flex flex-col justify-center space-y-4 md:space-y-6 lg:pl-6 h-full">
-            <div className="why-text-reveal">
-              <p className="font-display italic text-primary text-sm md:text-lg mb-1">Why Choose Us?</p>
-              <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-4 leading-[1.1]">
-                Our Experience Meets High Quality Standards
-              </h2>
-              <p className="font-body text-xs md:text-base text-muted-foreground leading-relaxed max-w-2xl">
-                At Solivagant Holidays, we offer a seamless, affordable travel experience supported by experts. Whether exploring vibrant cities or thrilling adventures, we ensure every aspect of your journey is perfect.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 features-grid">
-              {features.map((feat) => (
-                <div
-                  key={feat.title}
-                  className="bg-card flex items-center gap-2 p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-border/50 feature-reveal group cursor-default"
-                >
-                  <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <feat.icon size={16} />
-                  </div>
-                  <h3 className="font-body text-xs md:text-sm font-bold text-card-foreground group-hover:text-primary transition-colors">
-                    {feat.title}
-                  </h3>
-                </div>
-              ))}
-            </div>
-
-            <div className="why-text-reveal">
-              <div className="p-4 md:p-6 bg-white/60 backdrop-blur-md rounded-xl md:rounded-2xl border-l-[3px] md:border-l-[6px] border-primary shadow-md space-y-1">
-                <p className="font-display italic text-foreground text-base md:text-xl font-bold leading-snug">
-                  "Your Journey to exotic destinations starts here!!.."
+            <div className="flex flex-col justify-center space-y-8 lg:pl-10 h-full py-6">
+              <div className="why-text-reveal space-y-4">
+                <p className="font-display italic text-primary text-lg md:text-xl">Why Choose Us?</p>
+                <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1]">
+                  Our Experience<br />
+                  Meet High Quality<br />
+                  Standard
+                </h2>
+                <p className="font-body text-sm md:text-lg text-muted-foreground leading-relaxed max-w-2xl border-l-4 border-primary/20 pl-6 py-2">
+                  At Solivagant Holidays, we pride ourselves on offering a travel experience that is seamless, affordable, and supported by our experts. Whether you’re exploring the vibrant cities or embarking on a thrilling adventures, our team is here to ensure that every aspect of your journey is taken care of. From our industry expertise to competitive pricing and around-the-clock support, we provide everything you need for an unforgettable Tour experience.
                 </p>
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-[1px] bg-primary" />
-                  <p className="font-body text-primary font-bold text-[10px] md:text-sm">Solivagant Team</p>
+              </div>
+
+              {/* Enhanced Points Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 features-grid">
+                {features.map((feat) => (
+                  <div
+                    key={feat.title}
+                    className="flex items-start gap-4 p-2 feature-reveal group"
+                  >
+                    <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <feat.icon size={24} />
+                    </div>
+                    <div>
+                      <h3 className="font-body text-base md:text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                        {feat.title}
+                      </h3>
+                      <div className="w-8 h-1 bg-primary/20 mt-1 transition-all duration-300 group-hover:w-full group-hover:bg-primary" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="why-text-reveal pt-4">
+                <div className="p-6 md:p-8 bg-white/40 backdrop-blur-md rounded-3xl border border-primary/10 shadow-xl relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
+                  <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
+                  <p className="font-display italic text-foreground text-xl md:text-2xl font-bold leading-relaxed relative z-10">
+                    "Your Journey to exotic destinations starts here!!.."
+                  </p>
+                  <div className="mt-4 flex items-center gap-3 relative z-10">
+                    <div className="w-10 h-[2px] bg-primary/40" />
+                    <p className="font-body text-primary font-bold tracking-widest uppercase text-xs md:text-sm">Solivagant Team</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>

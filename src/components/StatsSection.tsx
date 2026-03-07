@@ -7,8 +7,8 @@ import { MapPin, Building, Compass, TreePalm } from "lucide-react";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const stats = [
-  { icon: MapPin, label: "Travel Destination", value: 50 },
-  { icon: Building, label: "Hotels & Accommodation", value: 120 },
+  { icon: MapPin, label: "Travel Destination", value: 350},
+  { icon: Building, label: "Hotels & Accommodation", value: 750 },
   { icon: Compass, label: "Tours & Activities", value: 80 },
   { icon: TreePalm, label: "Weekend Getaways", value: 40 },
 ];

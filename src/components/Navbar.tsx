@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -15,8 +16,11 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-[999] bg-white border-b border-gray-100 shadow-sm">
       <div className="w-full px-6 md:px-12 lg:px-20 mx-auto">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <a href="#home" className="font-display text-2xl md:text-3xl font-bold text-gray-900 transition-colors hover:text-primary">
-            Solivagant <span className="text-primary">Holidays</span>
+          <a href="#home" className="flex items-center gap-2 md:gap-3 transition-transform hover:scale-105 duration-300">
+            <img src={logo} alt="Solivagant Holidays" className="h-10 md:h-16 w-auto object-contain rounded-lg" />
+            <span className="hidden sm:inline-block font-display text-lg md:text-2xl font-bold text-primary">
+              Solivagant <span className="text-secondary">Holidays</span>
+            </span>
           </a>
 
           {/* Desktop */}

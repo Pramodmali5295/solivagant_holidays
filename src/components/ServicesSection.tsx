@@ -49,33 +49,46 @@ const ServicesSection = () => {
   }, { scope: container });
 
   return (
-    <section ref={container} className="py-16 md:py-24 bg-background w-full">
+    <section ref={container} className="py-20 md:py-32 bg-slate-50/50 w-full overflow-hidden">
       <div className="w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
-        <div className="text-center mb-12 md:mb-16 services-header-reveal">
-          <p className="font-display italic text-primary text-lg md:text-xl mb-2">Browse By Category</p>
-          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
-            One Stop Solution To All Your Travel Requirements
+        <div className="text-center mb-16 md:mb-24 services-header-reveal">
+          <p className="font-display italic text-primary text-xl md:text-2xl mb-4">Browse By Category</p>
+          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 md:mb-8 leading-[1.1] tracking-tight">
+            One Stop Solution To All Your <br className="hidden md:block" />
+            <span className="text-primary italic">Travel Requirements</span>
           </h2>
-          <p className="max-w-3xl mx-auto font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+          <div className="w-24 h-1.5 bg-primary/20 mx-auto mb-8 rounded-full" />
+          <p className="max-w-3xl mx-auto font-body text-base md:text-xl text-muted-foreground leading-relaxed">
             Solivagant Holidays covers all your travel essentials under one roof. Choose from the below services according to your needs.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 services-grid-reveal">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 services-grid-reveal">
           {services.map((svc) => (
             <div
               key={svc.title}
-              className="group bg-card rounded-[2rem] p-6 md:p-8 text-center border border-border/50 hover:border-primary hover:shadow-xl transition-all duration-500 cursor-pointer service-card-reveal flex flex-col items-center"
+              className="group bg-white rounded-[2.5rem] p-8 md:p-10 text-center border border-primary/5 hover:border-primary/20 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer service-card-reveal flex flex-col items-center relative overflow-hidden"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-[1.5rem] bg-secondary text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground group-hover:rotate-12 transition-all duration-500 shadow-inner">
-                <svc.icon size={32} className="md:w-[40px] md:h-[40px]" />
+              {/* Decorative Background Blob */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl translate-x-8 -translate-y-8 group-hover:bg-primary/10 transition-colors" />
+              
+              <div className="relative z-10 inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-[2rem] bg-primary/5 text-primary mb-8 group-hover:bg-primary group-hover:text-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-sm">
+                <svc.icon size={36} className="md:w-[48px] md:h-[48px]" />
               </div>
-              <h3 className="font-body text-lg md:text-xl font-bold text-card-foreground group-hover:text-primary transition-colors mb-3">
+              
+              <h3 className="relative z-10 font-body text-xl md:text-2xl font-bold text-foreground group-hover:text-primary transition-colors mb-4">
                 {svc.title}
               </h3>
-              <p className="font-body text-xs md:text-sm text-muted-foreground leading-relaxed">
+              
+              <p className="relative z-10 font-body text-sm md:text-base text-muted-foreground leading-relaxed">
                 {svc.description}
               </p>
+
+              <div className="mt-8 pt-6 border-t border-slate-100 w-full flex justify-center">
+                <span className="text-primary font-bold text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                  Select Service
+                </span>
+              </div>
             </div>
           ))}
         </div>
