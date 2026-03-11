@@ -6,21 +6,27 @@ import vietnam from "@/assets/vietnam.jpg";
 import dubai from "@/assets/dubai.jpg";
 import turkey from "@/assets/turkey.jpg";
 import thailand from "@/assets/thailand.jpg";
+import rajasthan from "@/assets/rajasthan.jpg";
+import kerala from "@/assets/kerala.jpg";
+import himalayas from "@/assets/himalayas.jpg";
+import bali from "@/assets/bali.jpg";
+import maldives from "@/assets/maldives.jpg";
+import switzerland from "@/assets/switzerland.jpg";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const destinations = [
-  { name: "Rajasthan", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" },
-  { name: "Kerala", image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" },
-  { name: "Uttarakhand", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
-  { name: "Himachal", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
+  { name: "Rajasthan", image: rajasthan },
+  { name: "Kerala", image: kerala },
+  { name: "Uttarakhand", image: himalayas },
+  { name: "Himachal", image: himalayas },
   { name: "Vietnam", image: vietnam },
   { name: "Dubai", image: dubai },
   { name: "Turkey", image: turkey },
   { name: "Thailand", image: thailand },
-  { name: "Bali", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" },
-  { name: "Maldives", image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" },
-  { name: "Switzerland", image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" },
+  { name: "Bali", image: bali },
+  { name: "Maldives", image: maldives },
+  { name: "Switzerland", image: switzerland },
 ];
 
 const DestinationsSection = () => {

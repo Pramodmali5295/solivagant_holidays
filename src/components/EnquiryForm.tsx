@@ -29,36 +29,26 @@ const EnquiryForm = () => {
   }, { scope: container });
 
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setStatus("idle");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
-          name: form.name,
-          mobile: form.mobile,
-          email: form.email,
-          message: form.message,
-          subject: "New Enquiry from Solivagant Holidays Website",
-        }),
-      });
+      const phoneNumber = "919112926707";
+      const message = `Hello Solivagant Holidays! I have an enquiry:
+*Name:* ${form.name}
+*Mobile:* ${form.mobile}
+*Email:* ${form.email}
+*Message:* ${form.message}`;
 
-      const result = await response.json();
-
-      if (result.success) {
-        setStatus("success");
-        setForm({ name: "", mobile: "", email: "", message: "" });
-      } else {
-        throw new Error(result.message || "Form submission failed");
-      }
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+      // Open WhatsApp in a new tab
+      window.open(whatsappUrl, "_blank");
+      
+      setStatus("success");
+      setForm({ name: "", mobile: "", email: "", message: "" });
     } catch (err) {
       console.error("Enquiry error:", err);
       setStatus("error");

@@ -30,7 +30,7 @@ const StatsSection = () => {
           trigger: item,
           start: "top 90%",
         },
-        y: 30,
+        scale: 0.9,
         opacity: 0,
         duration: 0.8,
         ease: "power2.out",
@@ -55,21 +55,30 @@ const StatsSection = () => {
   }, { scope: container });
 
   return (
-    <section ref={container} className="py-6 md:py-10 bg-foreground text-primary-foreground w-full">
-      <div className="w-full px-4 md:px-8 lg:px-16 mx-auto max-w-[1440px]">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+    <section ref={container} className="py-10 md:py-16 bg-foreground relative overflow-hidden w-full">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-[80px] -z-10 translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/10 rounded-full blur-[80px] -z-10 -translate-x-1/2 translate-y-1/2" />
+
+      <div className="w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
           {stats.map((stat) => (
-            <div key={stat.label} className="text-center stat-item group flex flex-col items-center">
-              <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-primary/10 text-primary mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:-rotate-12 shadow-inner">
-                <stat.icon size={24} className="md:w-[32px] md:h-[32px]" />
+            <div key={stat.label} className="stat-item group relative flex flex-col items-center text-center p-6 rounded-[1.5rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500">
+              <div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-xl bg-primary text-white mb-4 transform group-hover:-rotate-6 transition-transform duration-500 shadow-lg">
+                <stat.icon size={28} strokeWidth={1.5} className="md:w-8 md:h-8" />
               </div>
               <div 
-                className="font-display text-3xl md:text-4xl font-bold text-white mb-1 md:mb-2 counter-value tabular-nums h-[32px] md:h-[40px]"
+                className="font-display text-3xl md:text-5xl font-bold text-white mb-1 counter-value tabular-nums tracking-tighter"
                 data-value={stat.value}
               >
                 0+
               </div>
-              <p className="font-body text-[10px] md:text-sm text-primary-foreground/70 font-semibold tracking-wider uppercase">{stat.label}</p>
+              <p className="font-body text-sm md:text-base text-primary-foreground/80 font-medium leading-tight mb-2">
+                {stat.label}
+              </p>
+              
+              {/* Bottom line decorator */}
+              <div className="w-8 h-1 bg-primary/30 rounded-full group-hover:w-16 group-hover:bg-primary transition-all duration-500" />
             </div>
           ))}
         </div>

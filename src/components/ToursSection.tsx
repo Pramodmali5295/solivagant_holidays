@@ -6,7 +6,17 @@ import thailand from "@/assets/thailand.jpg";
 import bali from "@/assets/bali.jpg";
 import dubai from "@/assets/dubai.jpg";
 import turkey from "@/assets/turkey.jpg";
+import { Link } from "react-router-dom";
 import { Clock, MapPin } from "lucide-react";
+
+import switzerland from "@/assets/switzerland.jpg";
+import maldives from "@/assets/maldives.jpg";
+import vietnam from "@/assets/vietnam.jpg";
+import kerala from "@/assets/kerala.jpg";
+import rajasthan from "@/assets/rajasthan.jpg";
+import himalayas from "@/assets/himalayas.jpg";
+import paris from "@/assets/paris.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -15,14 +25,14 @@ const tours = [
   { name: "Stunning Bali", image: bali },
   { name: "Dazzling Dubai", image: dubai },
   { name: "Beautiful Turkey", image: turkey },
-  { name: "Majestic Switzerland", image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" },
-  { name: "Exotic Maldives", image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" },
-  { name: "Enchanting Vietnam", image: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" },
-  { name: "Magical Kerala", image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" },
-  { name: "Royal Rajasthan", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" },
-  { name: "Mesmerizing Himachal", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
-  { name: "Romantic Paris", image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" },
-  { name: "Historic Rome", image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" },
+  { name: "Majestic Switzerland", image: switzerland },
+  { name: "Exotic Maldives", image: maldives },
+  { name: "Enchanting Vietnam", image: vietnam },
+  { name: "Magical Kerala", image: kerala },
+  { name: "Royal Rajasthan", image: rajasthan },
+  { name: "Mesmerizing Himachal", image: himalayas },
+  { name: "Romantic Paris", image: paris },
+  { name: "Historic Rome", image: heroBg },
 ];
 
 const ToursSection = () => {
@@ -101,12 +111,12 @@ const ToursSection = () => {
 
                 <div className="mt-auto pt-6 border-t border-border/50">
                   
-                  <a 
-                    href="#contact"
+                  <Link 
+                    to="/contact"
                     className="w-full py-4 rounded-xl bg-foreground text-background font-body text-[10px] font-bold uppercase tracking-widest transition-all duration-500 hover:bg-primary hover:text-white group-hover:translate-y-[-2px] shadow-md flex items-center justify-center"
                   >
                     Explore
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
