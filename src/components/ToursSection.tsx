@@ -89,6 +89,7 @@ const ToursSection = () => {
                 <img
                   src={tour.image}
                   alt={tour.name}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />

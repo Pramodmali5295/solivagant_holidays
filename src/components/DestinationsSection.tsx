@@ -95,11 +95,12 @@ const DestinationsSection = () => {
           {[...destinations, ...destinations].map((dest, index) => (
             <div
               key={`${dest.name}-${index}`}
-              className="relative flex-shrink-0 w-64 md:w-[320px] rounded-[2rem] overflow-hidden aspect-[3/4] cursor-pointer shadow-xl dest-card group"
+              className="relative flex-shrink-0 w-64 md:w-80 lg:w-[340px] rounded-[2.5rem] overflow-hidden aspect-[3/4] cursor-pointer shadow-xl dest-card group"
             >
               <img
                 src={dest.image}
                 alt={dest.name}
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />

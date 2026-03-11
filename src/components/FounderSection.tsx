@@ -44,6 +44,7 @@ const FounderSection = () => {
               <img 
                 src={founderImg} 
                 alt="Sweta More - Founder of Solivagant Holidays" 
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -57,7 +58,7 @@ const FounderSection = () => {
           <div className="space-y-8">
             <div className="founder-text-reveal">
               <p className="font-display italic text-primary text-xl mb-4">Meet Our Founder</p>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+              <h2 className="font-display text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
                 Sweta More
               </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8" />

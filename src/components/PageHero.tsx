@@ -35,7 +35,7 @@ const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
   }, { scope: container });
 
   return (
-    <div ref={container} className="relative py-24 md:py-48 bg-foreground overflow-hidden">
+    <div ref={container} className="relative py-20 md:py-36 bg-foreground overflow-hidden">
       {backgroundImage && (
         <>
           <div 

@@ -33,7 +33,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden w-full pt-24 md:pt-32"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-125 hero-bg-anim"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-125 hero-bg-anim will-change-transform"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="absolute inset-0 hero-overlay bg-black/10 transition-colors duration-500" />
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <p className="hero-text-item font-display italic text-lg md:text-3xl text-primary-foreground/90 mb-4 md:mb-6 uppercase tracking-widest">
           Visit The Beautiful Landscape!
         </p>
-        <h1 className="hero-text-item font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.1] mb-6 md:mb-10 drop-shadow-2xl px-2">
+        <h1 className="hero-text-item font-display text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] mb-6 md:mb-10 drop-shadow-2xl px-2">
           Explore the world <br className="hidden sm:block" />In Comfort
         </h1>
         <p className="hero-text-item max-w-2xl mx-auto font-body text-sm md:text-lg text-primary-foreground/90 mb-8 md:mb-10 leading-relaxed">

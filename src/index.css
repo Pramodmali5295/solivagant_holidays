@@ -59,9 +59,17 @@
 }
 
 html {
-  font-size: 16px !important;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: 15px; /* Slightly scale down on very large screens to keep proportions elegant */
+  }
 }
 
 @layer base {
@@ -69,12 +77,13 @@ html {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
     font-family: var(--font-body);
-    font-size: 1rem !important;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
