@@ -31,7 +31,7 @@ const Footer = () => {
     { label: "About", href: "/about" },
     { label: "Tours & Destinations", href: "/tours" },
     { label: "Services", href: "/services" },
-    { label: "Contact", href: "/contact" },
+    { label: "Testimonials", href: "/testimonials" },
   ];
 
   return (
@@ -101,16 +101,17 @@ const Footer = () => {
               <div className="flex items-start gap-3 font-body text-base text-white/90">
                 <Mail size={18} className="text-primary mt-0.5 shrink-0" />
                 <div className="flex flex-col gap-0.5">
-                  <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base">sales.solivagantholidays@gmail.com</a>
-                  <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base">solivagantholidays@gmail.com</a>
+                  <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">info@solivagantholidays.com</a>
+                  <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">sales.solivagantholidays@gmail.com</a>
+                  <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">solivagantholidays@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 font-body text-base text-white/90">
                 <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
                 <div className="flex flex-col gap-1">
                   <span className="text-sm sm:text-base">
-                    Ema Homestay, Yogita Park, Baner Rd,<br />
-                    Balewadi Phata, Baner, Pune 411069
+                    Bliss Avenue, Balewadi,<br />
+                    Baner Pune 411045
                   </span>
                 </div>
               </div>
@@ -120,7 +121,7 @@ const Footer = () => {
             <h4 className="font-body text-base font-bold uppercase tracking-[0.2em] mb-4 text-primary">Our Location</h4>
             <div className="w-full h-[180px] rounded-xl overflow-hidden border border-white/10 shadow-lg bg-white/5 relative group">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2612981329184!2d73.7854!3d18.5583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec70c04f44f%3A0x63346e9f29910d5!2sSolivagant%20Holidays!5e0!3m2!1sen!2sin!4v1709825000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.993317644169!2d73.77398629999999!3d18.57434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b935d7b8c2e5%3A0x2ae14653fa9a0497!2sBliss%20Avenue%20Society!5e0!3m2!1sen!2sin!4v1773307718742!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

@@ -89,9 +89,9 @@ const EnquiryForm = () => {
                     <div>
                       <h4 className="font-body text-sm font-bold uppercase tracking-widest text-primary mb-2">Our Location</h4>
                       <p className="font-body text-lg text-foreground/80 leading-relaxed">
-                        Ema Homestay, Yogita Park, Baner Rd,<br />
-                        Balewadi Phata, Baner, Pune,<br />
-                        Maharashtra 411069, India
+                        Bliss Avenue, Balewadi,<br />
+                        Baner Pune 411045,<br />
+                        Maharashtra, India
                       </p>
                       <a 
                         href="https://www.google.com/maps/search/Solivagant+Holidays+Ema+Homestay+Baner+Pune" 
@@ -123,9 +123,10 @@ const EnquiryForm = () => {
                     </div>
                     <div>
                       <h4 className="font-body text-sm font-bold uppercase tracking-widest text-primary mb-2">Email Us</h4>
-                      <p className="font-body text-lg text-foreground/80 leading-relaxed space-y-1 flex flex-col">
-                        <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors">sales.solivagantholidays@gmail.com</a>
-                        <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors">solivagantholidays@gmail.com</a>
+                      <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed space-y-1 flex flex-col">
+                        <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors break-all">info@solivagantholidays.com</a>
+                        <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors break-all">sales.solivagantholidays@gmail.com</a>
+                        <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors break-all">solivagantholidays@gmail.com</a>
                       </p>
                     </div>
                   </div>

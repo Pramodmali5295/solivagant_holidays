@@ -8,7 +8,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Tours & Destinations", href: "/tours" },
   { label: "Services", href: "/services" },
-  { label: "Contact", href: "/contact" },
+  { label: "Testimonials", href: "/testimonials" },
 ];
 
 const Navbar = () => {
