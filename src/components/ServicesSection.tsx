@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FileText, Building, Car, Banknote, TrainFront, Plane, MapPin, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -65,7 +66,8 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 services-grid-reveal">
           {services.map((svc) => (
-            <div
+            <Link
+              to="/contact"
               key={svc.title}
               className="group bg-white rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 text-center border border-primary/5 hover:border-primary/20 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer service-card-reveal flex flex-col items-center relative overflow-hidden"
             >
@@ -85,11 +87,11 @@ const ServicesSection = () => {
               </p>
 
               <div className="mt-8 pt-6 border-t border-slate-100 w-full flex justify-center">
-                <span className="text-primary font-bold text-sm tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-                  Select Service
+                <span className="text-primary font-bold text-sm tracking-widest uppercase opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300 translate-y-0 lg:translate-y-2 lg:group-hover:translate-y-0">
+                  Enquire Now
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
