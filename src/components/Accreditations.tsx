@@ -1,14 +1,14 @@
-import logoIata from "../assets/logo-iata.jpeg";
+import logoIata from "@/assets/logo-iata.jpeg";
 
 // New images
-import aussieSpecialist from "../assets/Aussie_Specialist.png";
-import logoIataJpeg from "../assets/logo-iata.jpeg";
-import acc1 from "../assets/acc_1.jpeg";
-import acc2 from "../assets/acc_2.jpeg";
-import acc3 from "../assets/acc_3.jpeg";
-import acc4 from "../assets/acc_4.jpeg";
-import acc5 from "../assets/acc_5.jpeg";
-import utenLogo from "../assets/UTEN Logo TM_page-0001.jpg";
+import aussieSpecialist from "@/assets/Aussie_Specialist.png";
+import logoIataJpeg from "@/assets/logo-iata.jpeg";
+import acc1 from "@/assets/acc_1.jpeg";
+import acc2 from "@/assets/acc_2.jpeg";
+import acc3 from "@/assets/acc_3.jpeg";
+import acc4 from "@/assets/acc_4.jpeg";
+import acc5 from "@/assets/acc_5.jpeg";
+import utenLogo from "@/assets/UTEN Logo TM_page-0001.jpg";
 
 const founderCertifications = [
   { src: acc1, alt: "Maharashtra Tourism" },
@@ -61,16 +61,16 @@ const Accreditations = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-center justify-items-center max-w-5xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center">
                 {founderCertifications.map((logo, index) => (
                   <div 
                     key={index}
-                    className="group relative flex items-center justify-center p-4 sm:p-8 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-2xl hover:border-primary/30 hover:-translate-y-3 transition-all duration-500 w-full h-48 md:h-72"
+                    className="group relative flex items-center justify-center p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-primary/40 hover:-translate-y-2 transition-all duration-500 w-full aspect-square"
                   >
                     <img 
                       src={logo.src} 
                       alt={logo.alt} 
-                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-xl pointer-events-none"
+                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-md pointer-events-none"
                     />
                   </div>
                 ))}

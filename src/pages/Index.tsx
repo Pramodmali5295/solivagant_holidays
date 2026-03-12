@@ -10,7 +10,6 @@ const ToursSection = React.lazy(() => import("@/components/ToursSection"));
 const StatsSection = React.lazy(() => import("@/components/StatsSection"));
 const ServicesSection = React.lazy(() => import("@/components/ServicesSection"));
 const CTASection = React.lazy(() => import("@/components/CTASection"));
-const EnquiryForm = React.lazy(() => import("@/components/EnquiryForm"));
 const Footer = React.lazy(() => import("@/components/Footer"));
 
 const Index = () => {
@@ -26,7 +25,6 @@ const Index = () => {
         <StatsSection />
         <ServicesSection />
         <CTASection />
-        <EnquiryForm />
         <Footer />
       </Suspense>
     </div>
