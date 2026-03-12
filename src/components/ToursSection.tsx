@@ -114,7 +114,7 @@ const ToursSection = () => {
                   
                   <Link 
                     to="/contact"
-                    className="w-full py-4 rounded-xl bg-foreground text-background font-body text-[10px] font-bold uppercase tracking-widest transition-all duration-500 hover:bg-primary hover:text-white group-hover:translate-y-[-2px] shadow-md flex items-center justify-center"
+                    className="w-full py-4 rounded-xl bg-foreground text-background font-body text-sm font-bold uppercase tracking-widest transition-all duration-500 hover:bg-primary hover:text-white group-hover:translate-y-[-2px] shadow-md flex items-center justify-center"
                   >
                     Explore
                   </Link>

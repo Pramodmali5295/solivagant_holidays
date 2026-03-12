@@ -48,16 +48,16 @@ const HeroSection = () => {
         <p className="hero-text-item max-w-2xl mx-auto font-body text-xs sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 mb-8 md:mb-12 leading-relaxed px-4">
           Embark on extraordinary journeys with Solivagant Holidays. From the peaks of Switzerland to the beaches of Bali, we craft experiences that linger in your heart forever.
         </p>
-        <div className="hero-text-item flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 px-2 sm:px-0">
+        <div className="hero-text-item flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0">
           <Link
             to="/tours"
-            className="inline-block w-full xs:w-auto px-6 sm:px-12 py-3.5 sm:py-4 rounded-full bg-primary text-primary-foreground font-body text-[11px] sm:text-base font-bold uppercase tracking-widest hover:bg-coral-dark transition-all duration-300 shadow-2xl transform hover:scale-105"
+            className="inline-block w-full sm:w-auto px-8 md:px-12 py-4 rounded-full bg-primary text-primary-foreground font-body text-sm md:text-base font-bold uppercase tracking-widest hover:bg-coral-dark transition-all duration-300 shadow-2xl transform hover:scale-105 text-center"
           >
             See All Tours
           </Link>
           <Link
             to="/about"
-            className="inline-block w-full xs:w-auto px-6 sm:px-12 py-3.5 sm:py-4 rounded-full border-2 border-primary-foreground text-primary-foreground font-body text-[11px] sm:text-base font-bold uppercase tracking-widest hover:bg-primary-foreground hover:text-black transition-all duration-300 shadow-xl"
+            className="inline-block w-full sm:w-auto px-8 md:px-12 py-4 rounded-full border-2 border-primary-foreground text-primary-foreground font-body text-sm md:text-base font-bold uppercase tracking-widest hover:bg-primary-foreground hover:text-black transition-all duration-300 shadow-xl text-center"
           >
             Discover More
           </Link>

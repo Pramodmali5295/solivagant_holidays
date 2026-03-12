@@ -61,16 +61,16 @@ const Accreditations = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 items-center justify-items-center max-w-5xl mx-auto">
                 {founderCertifications.map((logo, index) => (
                   <div 
                     key={index}
-                    className="group relative flex items-center justify-center p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-primary/40 hover:-translate-y-2 transition-all duration-500 w-full aspect-square"
+                    className="group relative flex items-center justify-center p-4 sm:p-8 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-2xl hover:border-primary/30 hover:-translate-y-3 transition-all duration-500 w-full h-48 md:h-72"
                   >
                     <img 
                       src={logo.src} 
                       alt={logo.alt} 
-                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-md pointer-events-none"
+                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-xl pointer-events-none"
                     />
                   </div>
                 ))}
@@ -98,7 +98,7 @@ const Accreditations = () => {
                   {authorizedBy.map((logo, index) => (
                     <div 
                       key={index}
-                      className="group relative flex items-center justify-center p-8 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[280px] h-32 md:h-44"
+                      className="group relative flex items-center justify-center p-4 sm:p-6 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[400px] h-40 md:h-56"
                     >
                       <img 
                         src={logo.src} 
@@ -129,7 +129,7 @@ const Accreditations = () => {
                   {affiliatedMembers.map((logo, index) => (
                     <div 
                       key={index}
-                      className="group relative flex items-center justify-center p-8 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[280px] h-32 md:h-44"
+                      className="group relative flex items-center justify-center p-4 sm:p-6 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[400px] h-40 md:h-56"
                     >
                       <img 
                         src={logo.src} 
