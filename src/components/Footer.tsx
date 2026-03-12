@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           <div className="footer-section">
             <div className="flex items-center justify-center sm:justify-start gap-4 mb-4">
-              <img src={footerLogo} alt="Solivagant Holidays" className="h-16 md:h-24 w-auto object-contain rounded-xl" />
+              <img src={footerLogo} alt="Solivagant Holidays" className="h-16 md:h-24 w-auto object-contain rounded-xl pointer-events-none" />
             </div>
             <p className="font-body text-base md:text-lg text-white/90 leading-relaxed max-w-sm mb-6 mx-auto sm:mx-0">
               Your trusted travel partner for unforgettable journeys across the globe. We create memories that last a lifetime.
@@ -90,15 +90,15 @@ const Footer = () => {
 
           <div className="footer-section lg:ml-auto">
             <h4 className="font-body text-base font-bold uppercase tracking-[0.2em] mb-4 text-primary">Contact Info</h4>
-            <div className="space-y-4 max-w-xs">
-              <div className="flex items-start gap-3 font-body text-base text-white/90">
+            <div className="space-y-6 max-w-xs mx-auto sm:mx-0">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 font-body text-base text-white/90">
                 <Phone size={18} className="text-primary mt-0.5 shrink-0" />
-                <div className="flex flex-col gap-0.5">
+                <div className="flex flex-col gap-0.5 items-center sm:items-start text-center sm:text-left">
                   <a href="tel:+919112926707" className="hover:text-primary transition-colors">+91 91129 26707</a>
                   <a href="tel:+919209727707" className="hover:text-primary transition-colors">+91 92097 27707</a>
                 </div>
               </div>
-              <div className="flex items-start gap-3 font-body text-base text-white/90">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 font-body text-base text-white/90">
                 <Mail size={18} className="text-primary mt-1 shrink-0" />
                 <div className="flex flex-col gap-1 items-center sm:items-start text-center sm:text-left">
                   <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-xs sm:text-sm md:text-base break-all">info@solivagantholidays.com</a>
@@ -110,7 +110,7 @@ const Footer = () => {
                 <MapPin size={18} className="text-primary mt-1 shrink-0" />
                 <div className="flex flex-col gap-1 items-center sm:items-start text-center sm:text-left">
                   <span className="text-sm sm:text-base">
-                    Bliss Avenue, Balewadi,<br />
+                    Bliss Avenue, Balewadi,<br className="hidden sm:block" />
                     Baner Pune 411045
                   </span>
                 </div>
@@ -136,13 +136,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-10 pt-8 flex flex-col items-center gap-3">
-          <p className="font-body text-sm sm:text-base md:text-lg text-white text-center tracking-wide">
+        <div className="border-t border-white/20 mt-10 pt-8 flex flex-col items-center gap-4">
+          <p className="font-body text-xs sm:text-base text-white/80 text-center tracking-wide px-4">
             © 2026 Solivagant Holidays. All rights reserved.
           </p>
-          <p className="font-body text-[10px] sm:text-xs md:text-sm text-white/60 text-center tracking-widest uppercase">
-            Developed by <span className="text-secondary font-bold hover:text-white transition-colors cursor-pointer text-[11px] sm:text-sm">Infoyashonand Technology PVT.LTD</span>
-          </p>
+          <div className="flex flex-col items-center gap-1.5 font-body text-[10px] sm:text-xs text-white/50 text-center tracking-widest uppercase px-4">
+            <span>Developed by</span>
+            <span className="text-secondary font-bold hover:text-white transition-colors cursor-pointer text-[11px] sm:text-sm whitespace-nowrap">
+              Infoyashonand Technology PVT.LTD
+            </span>
+          </div>
         </div>
       </div>
     </footer>

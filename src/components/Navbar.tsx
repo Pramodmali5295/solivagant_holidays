@@ -24,7 +24,7 @@ const Navbar = () => {
             className="flex items-center gap-2 md:gap-3 transition-transform hover:scale-105 duration-300 shrink-0"
             onClick={() => window.scrollTo(0, 0)}
           >
-            <img src={logo} alt="Solivagant Holidays" className="h-10 sm:h-12 md:h-20 w-auto object-contain rounded-lg shadow-sm" />
+            <img src={logo} alt="Solivagant Holidays" className="h-10 sm:h-12 md:h-20 w-auto object-contain rounded-lg shadow-sm pointer-events-none" />
           </Link>
 
           {/* Desktop */}

@@ -123,39 +123,39 @@ const EnquiryForm = () => {
                     </div>
                     <div>
                       <h4 className="font-body text-sm font-bold uppercase tracking-widest text-primary mb-2">Email Us</h4>
-                      <p className="font-body text-foreground/80 leading-relaxed space-y-1.5 flex flex-col">
-                        <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg whitespace-nowrap">info@solivagantholidays.com</a>
-                        <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg whitespace-nowrap">sales.solivagantholidays@gmail.com</a>
-                        <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg whitespace-nowrap">solivagantholidays@gmail.com</a>
+                      <p className="font-body text-foreground/80 leading-relaxed space-y-2 flex flex-col items-center sm:items-start text-center sm:text-left">
+                        <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg break-all">info@solivagantholidays.com</a>
+                        <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg break-all">sales.solivagantholidays@gmail.com</a>
+                        <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-[13px] sm:text-sm md:text-lg break-all">solivagantholidays@gmail.com</a>
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-10 mt-auto border-t border-primary/10">
+                <div className="pt-10 mt-auto border-t border-primary/10 flex flex-col items-center sm:items-start">
                   <h4 className="font-body text-sm font-bold uppercase tracking-widest text-foreground/60 mb-6">Follow Our Journey</h4>
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-5 w-full items-center sm:items-start">
                     <a 
                       href="https://www.facebook.com/solivagant.holiday/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-4 text-foreground/70 hover:text-[#1877F2] transition-all duration-300"
+                      className="group flex flex-col sm:flex-row items-center gap-3 md:gap-4 text-foreground/70 hover:text-[#1877F2] transition-all duration-300"
                     >
                       <div className="w-12 h-12 rounded-xl bg-[#1877F2] flex items-center justify-center text-white shadow-md group-hover:bg-[#1877F2]/90 group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
                         <Facebook size={20} />
                       </div>
-                      <span className="font-body text-base font-medium">@solivagantholidays</span>
+                      <span className="font-body text-sm sm:text-base font-medium">@solivagantholidays</span>
                     </a>
                     <a 
                       href="https://www.instagram.com/solivagant_holidays?igsh=MTZndGsycDV1ZGl6bA==" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-4 text-foreground/70 hover:text-[#E4405F] transition-all duration-300"
+                      className="group flex flex-col sm:flex-row items-center gap-3 md:gap-4 text-foreground/70 hover:text-[#E4405F] transition-all duration-300"
                     >
                       <div className="w-12 h-12 rounded-xl bg-[#E4405F] flex items-center justify-center text-white shadow-md group-hover:bg-[#E4405F]/90 group-hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
                         <Instagram size={20} />
                       </div>
-                      <span className="font-body text-base font-medium">@solivagantholidays</span>
+                      <span className="font-body text-sm sm:text-base font-medium">@solivagantholidays</span>
                     </a>
                   </div>
                 </div>

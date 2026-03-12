@@ -61,24 +61,24 @@ const StatsSection = () => {
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-secondary/10 rounded-full blur-[80px] -z-10 -translate-x-1/2 translate-y-1/2" />
 
       <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-10">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-10">
           {stats.map((stat) => (
-            <div key={stat.label} className="stat-item group relative flex flex-col items-center text-center p-6 rounded-[1.5rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500">
-              <div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-xl bg-primary text-white mb-4 transform group-hover:-rotate-6 transition-transform duration-500 shadow-lg">
-                <stat.icon size={28} strokeWidth={1.5} className="md:w-8 md:h-8" />
+            <div key={stat.label} className="stat-item group relative flex flex-col items-center text-center p-4 sm:p-6 rounded-[1.5rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500">
+              <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl bg-primary text-white mb-3 md:mb-4 transform group-hover:-rotate-6 transition-transform duration-500 shadow-lg">
+                <stat.icon size={24} strokeWidth={1.5} className="md:w-8 md:h-8" />
               </div>
               <div 
-                className="font-display text-3xl md:text-5xl font-bold text-white mb-1 counter-value tabular-nums tracking-tighter"
+                className="font-display text-2xl md:text-5xl font-bold text-white mb-1 counter-value tabular-nums tracking-tighter"
                 data-value={stat.value}
               >
                 0+
               </div>
-              <p className="font-body text-sm md:text-base text-primary-foreground/80 font-medium leading-tight mb-2">
+              <p className="font-body text-[10px] sm:text-sm md:text-base text-primary-foreground/80 font-medium leading-tight mb-2 uppercase tracking-wider">
                 {stat.label}
               </p>
               
               {/* Bottom line decorator */}
-              <div className="w-8 h-1 bg-primary/30 rounded-full group-hover:w-16 group-hover:bg-primary transition-all duration-500" />
+              <div className="w-6 h-1 bg-primary/30 rounded-full group-hover:w-16 group-hover:bg-primary transition-all duration-500" />
             </div>
           ))}
         </div>

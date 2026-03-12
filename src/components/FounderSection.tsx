@@ -45,7 +45,7 @@ const FounderSection = () => {
                 src={founderImg} 
                 alt="Sweta More - Founder of Solivagant Holidays" 
                 loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105 pointer-events-none"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>

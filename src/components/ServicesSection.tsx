@@ -53,12 +53,12 @@ const ServicesSection = () => {
       <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
         <div className="text-center mb-12 md:mb-16 lg:mb-24 services-header-reveal">
           <p className="font-display italic text-primary text-lg md:text-2xl mb-3 md:mb-4">Browse By Category</p>
-          <h2 className="font-display text-3xl md:text-5xl lg:text-7xl font-bold text-foreground mb-4 md:mb-8 leading-[1.1] tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-foreground mb-4 md:mb-8 leading-[1.1] tracking-tight">
             One Stop Solution To All Your <br className="hidden md:block" />
             <span className="text-primary italic">Travel Requirements</span>
           </h2>
-          <div className="w-16 md:w-24 h-1.5 bg-primary/20 mx-auto mb-6 md:mb-8 rounded-full" />
-          <p className="max-w-3xl mx-auto font-body text-sm md:text-lg lg:text-xl text-muted-foreground leading-relaxed px-2">
+          <div className="w-12 md:w-24 h-1.5 bg-primary/20 mx-auto mb-6 md:mb-8 rounded-full" />
+          <p className="max-w-3xl mx-auto font-body text-xs sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed px-2">
             Solivagant Holidays covers all your travel essentials under one roof. Choose from the below services according to your needs.
           </p>
         </div>
@@ -67,7 +67,7 @@ const ServicesSection = () => {
           {services.map((svc) => (
             <div
               key={svc.title}
-              className="group bg-white rounded-[2.5rem] p-8 md:p-10 text-center border border-primary/5 hover:border-primary/20 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer service-card-reveal flex flex-col items-center relative overflow-hidden"
+              className="group bg-white rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 text-center border border-primary/5 hover:border-primary/20 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer service-card-reveal flex flex-col items-center relative overflow-hidden"
             >
               {/* Decorative Background Blob */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl translate-x-8 -translate-y-8 group-hover:bg-primary/10 transition-colors" />

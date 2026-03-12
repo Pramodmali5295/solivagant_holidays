@@ -42,22 +42,22 @@ const HeroSection = () => {
         <p className="hero-text-item font-display italic text-base sm:text-xl md:text-3xl text-primary-foreground/95 mb-4 md:mb-6 uppercase tracking-[0.2em]">
           Visit The Beautiful Landscape!
         </p>
-        <h1 className="hero-text-item font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.15] mb-6 md:mb-10 drop-shadow-2xl px-2">
-          Explore the world <br className="hidden sm:block" />In Comfort
+        <h1 className="hero-text-item font-display text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.15] mb-6 md:mb-10 drop-shadow-2xl px-2">
+          Explore the world <br className="hidden xs:block" />In Comfort
         </h1>
         <p className="hero-text-item max-w-2xl mx-auto font-body text-xs sm:text-base md:text-lg lg:text-xl text-primary-foreground/90 mb-8 md:mb-12 leading-relaxed px-4">
           Embark on extraordinary journeys with Solivagant Holidays. From the peaks of Switzerland to the beaches of Bali, we craft experiences that linger in your heart forever.
         </p>
-        <div className="hero-text-item flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
+        <div className="hero-text-item flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 px-2 sm:px-0">
           <Link
             to="/tours"
-            className="inline-block w-full sm:w-auto px-8 md:px-12 py-4 rounded-full bg-primary text-primary-foreground font-body text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest hover:bg-coral-dark transition-all duration-300 shadow-2xl transform hover:scale-105"
+            className="inline-block w-full xs:w-auto px-6 sm:px-12 py-3.5 sm:py-4 rounded-full bg-primary text-primary-foreground font-body text-[11px] sm:text-base font-bold uppercase tracking-widest hover:bg-coral-dark transition-all duration-300 shadow-2xl transform hover:scale-105"
           >
             See All Tours
           </Link>
           <Link
             to="/about"
-            className="inline-block w-full sm:w-auto px-8 md:px-12 py-4 rounded-full border-2 border-primary-foreground text-primary-foreground font-body text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest hover:bg-primary-foreground hover:text-black transition-all duration-300 shadow-xl"
+            className="inline-block w-full xs:w-auto px-6 sm:px-12 py-3.5 sm:py-4 rounded-full border-2 border-primary-foreground text-primary-foreground font-body text-[11px] sm:text-base font-bold uppercase tracking-widest hover:bg-primary-foreground hover:text-black transition-all duration-300 shadow-xl"
           >
             Discover More
           </Link>

@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
             <img 
               src={whyUs} 
               alt="Travel Adventure" 
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105 pointer-events-none"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent" />
           </div>

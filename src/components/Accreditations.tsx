@@ -11,20 +11,20 @@ import acc5 from "../assets/acc_5.jpeg";
 import utenLogo from "../assets/UTEN Logo TM_page-0001.jpg";
 
 const founderCertifications = [
-  { src: acc1, alt: "Accreditation 1" },
-  { src: acc2, alt: "Accreditation 2" },
-  { src: acc3, alt: "Accreditation 3" },
-  { src: acc4, alt: "Accreditation 4" },
+  { src: acc1, alt: "Maharashtra Tourism" },
+  { src: acc2, alt: "MSME Certified" },
+  { src: acc3, alt: "Professional Certificate" },
+  { src: acc4, alt: "Quality Assurance" },
   { src: aussieSpecialist, alt: "Aussie Specialist" },
   { src: logoIataJpeg, alt: "IATA Certification" },
 ];
 
 const authorizedBy = [
-  { src: acc5, alt: "Accreditation 5" },
+  { src: acc5, alt: "GST Authorized" },
 ];
 
 const affiliatedMembers = [
-  { src: utenLogo, alt: "UTEN Logo" },
+  { src: utenLogo, alt: "UTEN Member" },
 ];
 
 const Accreditations = () => {
@@ -70,11 +70,8 @@ const Accreditations = () => {
                     <img 
                       src={logo.src} 
                       alt={logo.alt} 
-                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-md"
+                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-md pointer-events-none"
                     />
-                    <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-foreground text-white text-[10px] py-1.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap z-20 font-body tracking-wider shadow-lg">
-                      {logo.alt}
-                    </div>
                   </div>
                 ))}
               </div>
@@ -106,7 +103,7 @@ const Accreditations = () => {
                       <img 
                         src={logo.src} 
                         alt={logo.alt} 
-                        className="w-full h-full object-contain transition-all duration-700"
+                        className="w-full h-full object-contain transition-all duration-700 pointer-events-none group-hover:scale-105"
                       />
                     </div>
                   ))}
@@ -137,7 +134,7 @@ const Accreditations = () => {
                       <img 
                         src={logo.src} 
                         alt={logo.alt} 
-                        className="w-full h-full object-contain transition-all duration-700"
+                        className="w-full h-full object-contain transition-all duration-700 pointer-events-none group-hover:scale-105"
                       />
                     </div>
                   ))}
