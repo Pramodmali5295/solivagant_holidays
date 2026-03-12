@@ -58,28 +58,28 @@ const EnquiryForm = () => {
   };
 
   return (
-    <section id="contact" ref={container} className="py-20 md:py-32 scroll-mt-20 md:scroll-mt-28 bg-secondary/10 w-full relative group overflow-hidden">
+    <section id="contact" ref={container} className="py-16 md:py-24 lg:py-32 scroll-mt-20 md:scroll-mt-28 bg-secondary/10 w-full relative group overflow-hidden">
       {/* Background Decorative elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 sm:opacity-100" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl opacity-50 sm:opacity-100" />
       
-      <div className="w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] enquiry-container relative z-10">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] enquiry-container relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 md:mb-20 enquiry-item">
-            <p className="font-display italic text-primary text-xl md:text-2xl mb-4">Contact Us</p>
-            <h2 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+          <div className="text-center mb-10 md:mb-16 lg:mb-20 enquiry-item">
+            <p className="font-display italic text-primary text-xl md:text-2xl mb-3 md:mb-4">Contact Us</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight px-2">
               Let's Start Your <span className="text-primary italic">Adventure</span>
             </h2>
-            <p className="font-body text-base md:text-lg text-muted-foreground mx-auto max-w-2xl">
+            <p className="font-body text-sm sm:text-base md:text-lg text-muted-foreground mx-auto max-w-2xl px-4">
               Whether you have a specific destination in mind or need inspiration, our travel experts are here to help you craft the perfect getaway.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Contact Information */}
-            <div className="lg:col-span-6 enquiry-item">
-              <div className="bg-white/80 backdrop-blur-md rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
-                <h3 className="font-display text-2xl md:text-3xl font-bold mb-8 text-foreground">Get In Touch</h3>
+            <div className="lg:col-span-6 enquiry-item order-2 lg:order-1">
+              <div className="bg-white/80 backdrop-blur-md rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                <h3 className="font-display text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-foreground">Get In Touch</h3>
                 
                 <div className="space-y-8 mb-10">
                   <div className="flex items-start gap-6 group">
@@ -163,8 +163,8 @@ const EnquiryForm = () => {
             </div>
 
             {/* Form Column */}
-            <div className="lg:col-span-6 enquiry-item">
-              <div className="bg-gradient-to-br from-white to-primary/5 rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-primary/20 backdrop-blur-sm h-full">
+            <div className="lg:col-span-6 enquiry-item order-1 lg:order-2">
+              <div className="bg-gradient-to-br from-white to-primary/5 rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-2xl border border-primary/20 backdrop-blur-sm h-full">
                 <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
                   <div>
                     <label className="block font-body text-xs md:text-sm font-bold text-foreground mb-3 md:mb-4 uppercase tracking-wider">Full Name*</label>
@@ -174,7 +174,7 @@ const EnquiryForm = () => {
                       placeholder="John Doe"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
+                      className="w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
                     />
                   </div>
 
@@ -192,7 +192,7 @@ const EnquiryForm = () => {
                         const val = e.target.value.replace(/\D/g, '').slice(0, 10);
                         setForm({ ...form, mobile: val });
                       }}
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
+                      className="w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
                     />
                   </div>
                   
@@ -204,7 +204,7 @@ const EnquiryForm = () => {
                       placeholder="john@example.com"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
+                      className="w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all"
                     />
                   </div>
 
@@ -216,7 +216,7 @@ const EnquiryForm = () => {
                       placeholder="Tell us about your dream destination..."
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all resize-none"
+                      className="w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl bg-white border border-primary/20 text-foreground font-body text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm transition-all resize-none"
                     />
                   </div>
 

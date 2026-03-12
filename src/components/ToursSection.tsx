@@ -67,19 +67,19 @@ const ToursSection = () => {
   }, { scope: container });
 
   return (
-    <section id="tours" ref={container} className="py-16 md:py-32 scroll-mt-20 md:scroll-mt-28 bg-secondary/15 w-full relative">
-      <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 mx-auto">
-        <div className="text-center mb-16 md:mb-24 tours-header-reveal">
-          <p className="font-display italic text-primary text-xl md:text-2xl mb-4">Our Tour List</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+    <section id="tours" ref={container} className="py-16 md:py-24 lg:py-32 scroll-mt-20 md:scroll-mt-28 bg-secondary/15 w-full relative">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
+        <div className="text-center mb-12 md:mb-16 lg:mb-24 tours-header-reveal">
+          <p className="font-display italic text-primary text-lg md:text-2xl mb-3 md:mb-4">Our Tour List</p>
+          <h2 className="font-display text-3xl md:text-5xl lg:text-7xl font-bold text-foreground mb-4 md:mb-8 leading-tight">
             Most Popular Tours
           </h2>
-          <p className="max-w-3xl mx-auto font-body text-muted-foreground text-lg md:text-xl leading-relaxed">
+          <p className="max-w-3xl mx-auto font-body text-sm md:text-lg lg:text-xl text-muted-foreground leading-relaxed px-2">
             Explore our most popular tours, featuring breathtaking destinations, exceptional experiences, and unforgettable memories.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 tours-grid-reveal">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 tours-grid-reveal">
           {tours.map((tour) => (
             <div
               key={tour.name}

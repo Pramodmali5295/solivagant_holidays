@@ -35,7 +35,7 @@ const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
   }, { scope: container });
 
   return (
-    <div ref={container} className="relative py-20 md:py-36 bg-foreground overflow-hidden">
+    <div ref={container} className="relative py-16 md:py-28 lg:py-36 bg-foreground overflow-hidden">
       {backgroundImage && (
         <>
           <div 
@@ -47,12 +47,12 @@ const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
       )}
       {!backgroundImage && <div className="absolute inset-0 bg-primary/5 opacity-50" />}
       
-      <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] text-center">
-        <h1 className="font-display text-4xl md:text-7xl lg:text-9xl font-bold text-white mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] page-hero-title">
+      <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] text-center">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold text-white mb-6 md:mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] page-hero-title leading-tight">
           {title}
         </h1>
         {subtitle && (
-          <p className="font-body text-xl md:text-3xl text-white/95 max-w-4xl mx-auto italic leading-relaxed page-hero-subtitle font-light tracking-wide shadow-black/20 text-shadow-lg">
+          <p className="font-body text-base md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto italic leading-relaxed page-hero-subtitle font-light tracking-wide shadow-black/20 text-shadow-lg px-2">
             {subtitle}
           </p>
         )}

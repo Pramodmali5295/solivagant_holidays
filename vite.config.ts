@@ -17,4 +17,16 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          animations: ["gsap", "@gsap/react"],
+          ui: ["lucide-react", "embla-carousel-react"],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 }));

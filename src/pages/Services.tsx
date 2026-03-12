@@ -11,7 +11,7 @@ const Services = () => {
     <div className="min-h-screen bg-background">
       <FloatingSocials />
       <Navbar />
-      <div className="pt-20 md:pt-24">
+      <div className="pt-16 sm:pt-20 md:pt-24">
         <PageHero 
           title="Our Services" 
           subtitle="Comprehensive travel solutions to make your journey seamless and enjoyable."

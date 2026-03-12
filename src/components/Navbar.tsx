@@ -17,14 +17,14 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[999] bg-white border-b border-gray-100 shadow-sm">
-      <div className="w-full px-6 md:px-12 lg:px-20 mx-auto">
-        <div className="flex items-center justify-between h-20 md:h-24">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto">
+        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24">
           <Link 
             to="/" 
-            className="flex items-center gap-2 md:gap-3 transition-transform hover:scale-105 duration-300"
+            className="flex items-center gap-2 md:gap-3 transition-transform hover:scale-105 duration-300 shrink-0"
             onClick={() => window.scrollTo(0, 0)}
           >
-            <img src={logo} alt="Solivagant Holidays" className="h-12 md:h-20 w-auto object-contain rounded-lg" />
+            <img src={logo} alt="Solivagant Holidays" className="h-10 sm:h-12 md:h-20 w-auto object-contain rounded-lg shadow-sm" />
           </Link>
 
           {/* Desktop */}

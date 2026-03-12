@@ -26,13 +26,13 @@ const CTASection = () => {
   }, { scope: container });
 
   return (
-    <section ref={container} className="relative py-20 md:py-32 overflow-hidden w-full">
+    <section ref={container} className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed brightness-125"
+        className="absolute inset-0 bg-cover bg-center md:bg-fixed brightness-125"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-10 text-center px-6 md:px-12 w-full max-w-[1440px] mx-auto cta-content">
+      <div className="relative z-10 text-center px-4 sm:px-6 md:px-12 w-full max-w-[1440px] mx-auto cta-content">
         <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
           Ready To Travel With Us?
         </h2>

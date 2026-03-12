@@ -10,48 +10,141 @@ import acc4 from "../assets/acc_4.jpeg";
 import acc5 from "../assets/acc_5.jpeg";
 import utenLogo from "../assets/UTEN Logo TM_page-0001.jpg";
 
-const accreditationLogos = [
-  { src: logoIataJpeg, alt: "IATA Certification" },
-  { src: aussieSpecialist, alt: "Aussie Specialist" },
-  { src: utenLogo, alt: "UTEN Logo" },
+const founderCertifications = [
   { src: acc1, alt: "Accreditation 1" },
   { src: acc2, alt: "Accreditation 2" },
   { src: acc3, alt: "Accreditation 3" },
   { src: acc4, alt: "Accreditation 4" },
+  { src: aussieSpecialist, alt: "Aussie Specialist" },
+  { src: logoIataJpeg, alt: "IATA Certification" },
+];
+
+const authorizedBy = [
   { src: acc5, alt: "Accreditation 5" },
+];
+
+const affiliatedMembers = [
+  { src: utenLogo, alt: "UTEN Logo" },
 ];
 
 const Accreditations = () => {
   return (
-    <section className="py-20 md:py-32 bg-gray-50 w-full overflow-hidden">
+    <section className="py-24 md:py-32 bg-[#fafbfc] w-full overflow-hidden">
       <div className="w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px]">
-        <div className="text-center mb-16 md:mb-20 animate-fade-in">
-          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Accreditations and Authorizations
+        {/* Main Header */}
+        <div className="text-center mb-20 md:mb-28 animate-fade-in">
+          <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary font-body text-sm font-bold tracking-widest uppercase">
+            Trust & Quality
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-8">
+            Accreditations & <span className="text-primary italic">Authorizations</span>
           </h2>
           <div className="w-24 h-1.5 bg-primary mx-auto rounded-full mb-10" />
-          <p className="max-w-4xl mx-auto font-body text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed italic">
-            "We take pride in meeting industry standards. Recognized by Tourism Boards, our accreditations guarantee reliability and trustworthiness in every aspect of our work."
+          <p className="max-w-3xl mx-auto font-body text-base md:text-xl text-muted-foreground leading-relaxed">
+            We maintain the highest industry standards. Our global recognitions and local authorizations are a testament to our commitment to safe, reliable, and exceptional travel experiences.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 items-center justify-items-center">
-          {accreditationLogos.map((logo, index) => (
-            <div 
-              key={index}
-              className="group relative flex items-center justify-center p-4 md:p-6 bg-white rounded-3xl border border-border shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500 w-full h-28 md:h-36 lg:h-40"
-            >
-              <img 
-                src={logo.src} 
-                alt={logo.alt} 
-                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-110 drop-shadow-sm"
-              />
-              {/* Tooltip on hover */}
-              <div className="absolute -top-10 md:-top-12 left-1/2 -translate-x-1/2 bg-black/90 backdrop-blur-sm text-white text-xs py-2 px-3 md:px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-20 shadow-xl font-body">
-                {logo.alt}
+        <div className="space-y-24 md:space-y-32">
+          {/* Founder Certification Section */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-primary/5 rounded-[4rem] -rotate-1 scale-105 blur-2xl pointer-events-none" />
+            <div className="relative bg-white rounded-[3rem] p-8 md:p-16 border border-primary/10 shadow-sm transition-all duration-500 hover:shadow-md">
+              <div className="flex flex-col items-center mb-12">
+                <h3 className="font-display text-3xl md:text-4xl font-bold text-center mb-4 text-foreground flex items-center gap-3">
+                  <span className="w-12 h-1 px-4 bg-primary/20 rounded-full hidden md:block" />
+                  Founder Certification
+                  <span className="w-12 h-1 px-4 bg-primary/20 rounded-full hidden md:block" />
+                </h3>
+                <p className="font-body text-base md:text-lg text-muted-foreground text-center max-w-2xl mx-auto">
+                  Our leadership's professional credentials from world-renowned tourism boards and organizations.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center">
+                {founderCertifications.map((logo, index) => (
+                  <div 
+                    key={index}
+                    className="group relative flex items-center justify-center p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:border-primary/40 hover:-translate-y-2 transition-all duration-500 w-full aspect-square"
+                  >
+                    <img 
+                      src={logo.src} 
+                      alt={logo.alt} 
+                      className="w-full h-full object-contain transition-all duration-700 group-hover:scale-110 drop-shadow-md"
+                    />
+                    <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-foreground text-white text-[10px] py-1.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap z-20 font-body tracking-wider shadow-lg">
+                      {logo.alt}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Authorized & Affiliated Secondary Sections */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
+            {/* Authorized by */}
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[3rem] p-8 md:p-12 border border-primary/10 shadow-sm flex flex-col h-full hover:shadow-xl transition-all duration-500 group">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground">
+                    Authorized by
+                  </h3>
+                </div>
+                <p className="font-body text-base text-muted-foreground mb-10 leading-relaxed">
+                  Compliance and government recognition ensuring full legal authorization for professional tourism services.
+                </p>
+                <div className="mt-auto flex justify-center">
+                  {authorizedBy.map((logo, index) => (
+                    <div 
+                      key={index}
+                      className="group relative flex items-center justify-center p-8 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[280px] h-32 md:h-44"
+                    >
+                      <img 
+                        src={logo.src} 
+                        alt={logo.alt} 
+                        className="w-full h-full object-contain transition-all duration-700"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Affiliated Members */}
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[3rem] p-8 md:p-12 border border-primary/10 shadow-sm flex flex-col h-full hover:shadow-xl transition-all duration-500 group">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-500">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground">
+                    Affiliated Members
+                  </h3>
+                </div>
+                <p className="font-body text-base text-muted-foreground mb-10 leading-relaxed">
+                  Networking with elite global travel associations to provide our clients with exclusive deals and seamless support.
+                </p>
+                <div className="mt-auto flex justify-center">
+                  {affiliatedMembers.map((logo, index) => (
+                    <div 
+                      key={index}
+                      className="group relative flex items-center justify-center p-8 bg-gray-50/50 rounded-3xl border border-gray-100 shadow-inner hover:bg-white hover:shadow-2xl hover:border-primary/40 transition-all duration-500 w-full max-w-[280px] h-32 md:h-44"
+                    >
+                      <img 
+                        src={logo.src} 
+                        alt={logo.alt} 
+                        className="w-full h-full object-contain transition-all duration-700"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const Tours = () => {
     <div className="min-h-screen bg-background">
       <FloatingSocials />
       <Navbar />
-      <div className="pt-20 md:pt-24">
+      <div className="pt-16 sm:pt-20 md:pt-24">
         <PageHero 
           title="Tours & Destinations" 
           subtitle="Explore exotic destinations and popular tour packages curated for your dream journey."

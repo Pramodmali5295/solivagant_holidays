@@ -36,16 +36,16 @@ const Footer = () => {
 
   return (
     <footer ref={container} className="bg-black text-primary-foreground w-full">
-      <div className="w-full px-6 md:px-12 lg:px-20 py-8 md:py-12 mx-auto max-w-[1440px] footer-content">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 py-10 md:py-16 mx-auto max-w-[1440px] footer-content text-center sm:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           <div className="footer-section">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center justify-center sm:justify-start gap-4 mb-4">
               <img src={footerLogo} alt="Solivagant Holidays" className="h-16 md:h-24 w-auto object-contain rounded-xl" />
             </div>
-            <p className="font-body text-base md:text-lg text-white/90 leading-relaxed max-w-sm mb-6">
+            <p className="font-body text-base md:text-lg text-white/90 leading-relaxed max-w-sm mb-6 mx-auto sm:mx-0">
               Your trusted travel partner for unforgettable journeys across the globe. We create memories that last a lifetime.
             </p>
-            <div className="flex gap-4">
+            <div className="flex justify-center sm:justify-start gap-4">
               <a 
                 href="https://www.facebook.com/solivagant.holiday/" 
                 target="_blank" 
@@ -99,16 +99,16 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3 font-body text-base text-white/90">
-                <Mail size={18} className="text-primary mt-0.5 shrink-0" />
-                <div className="flex flex-col gap-0.5">
-                  <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">info@solivagantholidays.com</a>
-                  <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">sales.solivagantholidays@gmail.com</a>
-                  <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-sm sm:text-base break-all">solivagantholidays@gmail.com</a>
+                <Mail size={18} className="text-primary mt-1 shrink-0" />
+                <div className="flex flex-col gap-1 items-center sm:items-start text-center sm:text-left">
+                  <a href="mailto:info@solivagantholidays.com" className="hover:text-primary transition-colors text-xs sm:text-sm md:text-base break-all">info@solivagantholidays.com</a>
+                  <a href="mailto:sales.solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-xs sm:text-sm md:text-base break-all">sales.solivagantholidays@gmail.com</a>
+                  <a href="mailto:solivagantholidays@gmail.com" className="hover:text-primary transition-colors text-xs sm:text-sm md:text-base break-all">solivagantholidays@gmail.com</a>
                 </div>
               </div>
-              <div className="flex items-start gap-3 font-body text-base text-white/90">
-                <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
-                <div className="flex flex-col gap-1">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 font-body text-base text-white/90">
+                <MapPin size={18} className="text-primary mt-1 shrink-0" />
+                <div className="flex flex-col gap-1 items-center sm:items-start text-center sm:text-left">
                   <span className="text-sm sm:text-base">
                     Bliss Avenue, Balewadi,<br />
                     Baner Pune 411045
@@ -136,12 +136,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-6 flex flex-col items-center gap-2">
-          <p className="font-body text-base md:text-lg text-white text-center tracking-wide">
+        <div className="border-t border-white/20 mt-10 pt-8 flex flex-col items-center gap-3">
+          <p className="font-body text-sm sm:text-base md:text-lg text-white text-center tracking-wide">
             © 2026 Solivagant Holidays. All rights reserved.
           </p>
-          <p className="font-body text-xs md:text-sm text-white/60 text-center tracking-widest uppercase">
-            Developed by <span className="text-secondary font-bold hover:text-white transition-colors cursor-pointer text-sm">Infoyashonand Technology PVT.LTD</span>
+          <p className="font-body text-[10px] sm:text-xs md:text-sm text-white/60 text-center tracking-widest uppercase">
+            Developed by <span className="text-secondary font-bold hover:text-white transition-colors cursor-pointer text-[11px] sm:text-sm">Infoyashonand Technology PVT.LTD</span>
           </p>
         </div>
       </div>

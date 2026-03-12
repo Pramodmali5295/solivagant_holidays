@@ -72,17 +72,17 @@ const DestinationsSection = () => {
   }, { scope: container });
 
   return (
-    <section id="destinations" ref={container} className="py-20 md:py-32 scroll-mt-20 md:scroll-mt-28 bg-background w-full overflow-hidden">
+    <section id="destinations" ref={container} className="py-16 md:py-24 lg:py-32 scroll-mt-20 md:scroll-mt-28 bg-background w-full overflow-hidden">
       {/* Header - Padded */}
-      <div className="w-full px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] mb-16">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 mx-auto max-w-[1440px] mb-12 md:mb-16">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-10">
           <div className="dest-title-item">
-            <p className="font-display italic text-primary text-xl mb-4">Our Destinations</p>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
+            <p className="font-display italic text-primary text-xl mb-3 md:mb-4">Our Destinations</p>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-foreground leading-tight">
               GO TO Exotic places
             </h2>
           </div>
-          <p className="dest-title-item max-w-2xl font-body text-muted-foreground text-lg md:text-xl leading-relaxed">
+          <p className="dest-title-item max-w-2xl font-body text-muted-foreground text-sm sm:text-base md:text-xl leading-relaxed">
             Discover breathtaking landscapes, vibrant cultures and thrilling adventures with Solivagant Holidays.
             Explore exotic destinations and create unforgettable memories on your dream journey.
           </p>
