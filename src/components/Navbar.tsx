@@ -62,28 +62,34 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl py-8 px-6 space-y-6 transition-all duration-300 origin-top ${
-        isOpen ? "opacity-100 scale-y-100 visible" : "opacity-0 scale-y-0 invisible"
-      }`}>
-        {navLinks.map((link) => (
-          <Link
-            key={link.label}
-            to={link.href}
-            onClick={() => setIsOpen(false)}
-            className={`block font-display text-2xl font-bold transition-colors ${
-              location.pathname === link.href ? "text-primary" : "text-gray-900 hover:text-primary"
-            }`}
-          >
-            {link.label}
-          </Link>
-        ))}
-        <Link
-          to="/contact"
-          onClick={() => setIsOpen(false)}
-          className="block text-center px-8 py-4 rounded-full bg-primary text-white font-body text-lg font-bold shadow-lg"
-        >
-          Enquire Now
-        </Link>
+      <div 
+        className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out flex flex-col ${
+          isOpen ? "max-h-[500px] opacity-100 py-6 px-6" : "max-h-0 opacity-0 py-0 px-6"
+        }`}
+      >
+        <div className="flex flex-col space-y-5">
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              to={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`block font-display text-xl font-bold transition-colors ${
+                location.pathname === link.href ? "text-primary" : "text-gray-900 hover:text-primary"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="pt-4 border-t border-gray-100 mt-2">
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="block flex items-center justify-center w-full px-8 py-3.5 rounded-full bg-primary text-white font-body text-base font-bold shadow-lg shadow-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              Enquire Now
+            </Link>
+          </div>
+        </div>
       </div>
     </nav>
   );

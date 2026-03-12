@@ -136,7 +136,7 @@ const EnquiryForm = () => {
                   <h4 className="font-body text-sm font-bold uppercase tracking-widest text-foreground/60 mb-6">Follow Our Journey</h4>
                   <div className="flex flex-col gap-4">
                     <a 
-                      href="https://facebook.com/solivagantholidays" 
+                      href="https://www.facebook.com/solivagant.holiday/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="group flex items-center gap-4 text-foreground/70 hover:text-[#1877F2] transition-all duration-300"
@@ -147,7 +147,7 @@ const EnquiryForm = () => {
                       <span className="font-body text-base font-medium">@solivagantholidays</span>
                     </a>
                     <a 
-                      href="https://instagram.com/solivagantholidays" 
+                      href="https://www.instagram.com/solivagant_holidays?igsh=MTZndGsycDV1ZGl6bA==" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="group flex items-center gap-4 text-foreground/70 hover:text-[#E4405F] transition-all duration-300"

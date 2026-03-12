@@ -13,7 +13,7 @@ const FloatingSocials = () => {
         <MessageCircle size={20} className="md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
       </a>
       <a
-        href="https://instagram.com/solivagantholidays"
+        href="https://www.instagram.com/solivagant_holidays?igsh=MTZndGsycDV1ZGl6bA=="
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 md:w-12 md:h-12 bg-pink-600 text-white flex items-center justify-center rounded-l-xl shadow-lg hover:w-11 md:hover:w-14 hover:-translate-x-1 md:hover:-translate-x-2 transition-all duration-300 group"
@@ -22,7 +22,7 @@ const FloatingSocials = () => {
         <Instagram size={20} className="md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
       </a>
       <a
-        href="https://facebook.com/solivagantholidays"
+        href="https://www.facebook.com/solivagant.holiday/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white flex items-center justify-center rounded-l-xl shadow-lg hover:w-11 md:hover:w-14 hover:-translate-x-1 md:hover:-translate-x-2 transition-all duration-300 group"
