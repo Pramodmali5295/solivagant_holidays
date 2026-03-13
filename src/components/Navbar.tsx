@@ -35,12 +35,12 @@ const Navbar = () => {
           </div>
 
           {/* Center: Navigation Links */}
-          <div className="hidden lg:flex flex-[3] justify-center items-center gap-6 lg:gap-10 xl:gap-20">
+          <div className="hidden lg:flex flex-[3] justify-center items-center gap-6 lg:gap-12 xl:gap-16">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.href}
-                className={`font-body text-base lg:text-lg xl:text-2xl font-bold transition-all duration-300 relative group whitespace-nowrap ${
+                className={`font-body text-base lg:text-lg xl:text-xl font-bold transition-all duration-300 relative group whitespace-nowrap ${
                   location.pathname === link.href ? "text-primary" : "text-gray-600 hover:text-primary"
                 }`}
               >
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex-1 flex items-center justify-end gap-3 sm:gap-6">
             <Link
               to="/contact"
-              className="hidden lg:flex px-6 lg:px-8 xl:px-12 py-2.5 lg:py-4 xl:py-5 rounded-full bg-primary text-white font-body text-base lg:text-lg xl:text-2xl font-bold shadow-lg hover:bg-coral-dark transition-all duration-300 whitespace-nowrap"
+              className="hidden lg:flex px-6 lg:px-8 xl:px-12 py-2.5 lg:py-4 xl:py-5 rounded-full bg-primary text-white font-body text-base lg:text-lg xl:text-xl font-bold shadow-lg hover:bg-coral-dark transition-all duration-300 whitespace-nowrap"
             >
               Enquire Now
             </Link>

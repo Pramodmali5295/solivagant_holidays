@@ -66,12 +66,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1536px) {
-  html {
-    font-size: 15px; /* Slightly scale down on very large screens to keep proportions elegant */
-  }
-}
-
 @layer base {
   * {
     @apply border-border;
